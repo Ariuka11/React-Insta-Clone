@@ -1,10 +1,13 @@
 import React from 'react';
 import './commentSection.css';
-
-const commentSection = props => {
+import {Row, Col} from 'reactstrap';
+const CommentSection = props => {
     return (
-        <div>
-           
-        </div>
+        <Row>
+           <span>{props.comment.username}</span>
+           <span>{props.comment.text}</span>
+        </Row>
     );
 }
+
+export default CommentSection;
